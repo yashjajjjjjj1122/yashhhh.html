@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>images</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 300vh;
+      background: #f0f0f0;
+      margin: 50;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: 200px 320px 100%;
+      grid-template-rows: 300px 300px 300px;
+      gap: 100px;
+    }
+
+    .image-grid img {
+      width: 200px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 50px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+   
+    .img1 { grid-column: 2; grid-row: 1; } 
+    .img2 { grid-column: 1; grid-row: 2; } 
+    .img3 { grid-column: 2; grid-row: 2; } 
+    .img4 { grid-column: 3; grid-row: 2; } 
+    .img5 { grid-column: 2; grid-row: 3; } 
+  </style>
+</head>
+<body>
+
+  <div class="image-grid">
+    <img src="th.jpeg">
+    <img src="th-2.jpeg">
+    <img src="th-3.jpeg">
+    <img src="th-4.jpeg">
+    <img src="th-5.jpeg">
+  </div>
+
+</body>
+</html>
